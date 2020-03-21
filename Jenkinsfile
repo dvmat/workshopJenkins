@@ -21,7 +21,7 @@ pipeline {
                 }
             }
         }
-        stage('Creaza artefacte') {
+        stage('Deploy jars') {
             steps {
             	sh 'chmod u+r+x ./jenkins/scripts/deliver.sh'
                 sh './jenkins/scripts/deliver.sh'
